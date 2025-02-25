@@ -76,7 +76,7 @@ class: text-left
 # Summary from Last Class
 (5 min) 
 
-- How pseudo-class is used to make this?
+- What pseudo-class is used to make this?
 - Goto https://codepen.io/codevilla/pen/zxYKWjp 
 
 <style>

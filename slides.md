@@ -163,7 +163,8 @@ transition: slide-left
 # Exercise: Flexbox
 (20 min) Recognize how flexbox can be applied in website development
 
-- Goto: https://codepen.io/codevilla/pen/pvoEZLN and experiment with https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- Goto: https://codepen.io/codevilla/pen/pvoEZLN 
+- experiment with https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 <!-- 
 READ: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -176,7 +177,8 @@ transition: slide-left
 # Exercise: Grid
 (20 min) Recreate the following using CSS Grid
 
-- Goto: https://codepen.io/codevilla/pen/dPypjEr and experiment with https://css-tricks.com/snippets/css/complete-guide-grid/
+- Goto: https://codepen.io/codevilla/pen/dPypjEr 
+- experiment with https://css-tricks.com/snippets/css/complete-guide-grid/
 <img src="/assets/golden.jpg" alt="" style="height: 400px">
 
 <!-- 
@@ -206,6 +208,7 @@ transition: slide-left
 - Apply what you've learned so far to your "Personal Website" assignment (aka Portfolio assignment)
    - Validate HTML https://validator.w3.org/
    - Validate CSS https://jigsaw.w3.org/css-validator/
+- Reminder: try to complete class feedback survey every other week
 
 <!--
 - take attendance

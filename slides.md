@@ -16,11 +16,11 @@ transition: slide-left
 mdc: true
 ---
 
-# Bootstrap CSS Framework 
+# CSS - part 3/3
 Software Development Bootcamp - Circuit Stream
-- [ ] Assignment 1 FAQ, go over rubric
-- [ ] Understand how frameworks and libraries are used in software dev
-- [ ] Utilize Bootstrap to leverage frameworks in website development
+- [ ] Create a responsive website layout using CSS
+- [ ] Discuss different ways of creating website layouts: 
+   - [ ] flexbox, grid, float, position
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
@@ -39,54 +39,15 @@ TODO: fill in anchor href above to point to github repo for these slides
 transition: slide-left
 ---
 
-# Assignment 1 & Upcoming Lab
-(10 min)
+# Summary from Last Class
+(5 min)
 
-- Can we use bootstrap? Yes (optional) but ONLY for responsive behaviour (vanilla CSS for everything else)
-- Rubric Overview
-- Due Date: Sun Mar. 9 midnight EST
-- Lab: Wed Mar 5 
-   - Labs exist so you get a chance to practice topics you've learned, extend your learning, dig deeper, etc.
-   - Labs are completely free form
-   - AMA - Ask me Anything
-   - Enter your anonymous questions [here](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
+- What parts of the box model affects the total width an element?
+- What's the diffference between `box-sizing: content-box` and `box-sizing: border-box`
+- Name all CSS properties involved in making this?
+- Where would you place the `<div>` tags?
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-HTML: w3c html validator, semantic (no text inside 1 di. ex: must next p tag )
-CSS: w3c CSS validator, Does each of your CSS rules actually apply?
-Complexity: CSS Grid/Flex or using Responsive Bootstrap grid, position absolute/relative
-ProjOrg: Lighthouse, images in folders, internal comments/docs, 
--->
-
----
-transition: slide-left
----
-
-# Intro to Frameworks
-(10 min) 
-
-- HTML works together with CSS -- which is more important?
-- In s/w dev, there are frameworks and libraries that will help you get faster results with already created solutions
-- [State of CSS Survey 2024](https://2024.stateofcss.com/en-US/tools/#css_frameworks) 
-- [State of JS Survey 2024](https://2024.stateofjs.com/en-US/libraries/front-end-frameworks/)
-- How to decide on a framework?
-   - Pre-built Components out of the box
-   - Customization ability
-   - Long-term Scalability
-   - Learning Curve and Docs
-   - Maintenance and Updates
+<img src="/assets/stripe.png" style="height: 350px">
 
 
 <style>
@@ -102,60 +63,76 @@ h1 {
 </style>
 
 <!--
-- "Content is king" - without content, you got nothing.
-- My web app didn't use CSS framework
-- My website workplace used Bootstrap
-- Show how to check if it's been maintained recently
--->
-
-
----
-transition: slide-left
----
-
-# Exercise: Installing Bootstrap
-(30 min) What is Bootstrap and its purpose?  
-Try resizing your browser for your portfolio site - does design break?
-
-1. VS Code way using CDN link
-2. VS Code way downloading
-3. npm way (look for bootstrap.min.css/bootstrap.bundle.min.js files in node_modules)
-
-- Read https://getbootstrap.com/docs/5.3/getting-started/introduction/
-- Goto: https://codepen.io/codevilla/pen/MYWbRoO
-
-<!-- 
-- Bootstrap is a popular front-end framework used to create responsive web designs with ease.
-- It includes predefined CSS classes, JavaScript components, and responsive grid layouts.
-- show npmjs.com
-- Goto URL and compare: https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css vs bootstrap.css
--->
-
----
-transition: slide-left
----
-
-# Exercise: Breakpoints and containers
-(40 min) 
-
-- Breakpoints allow us to define how our design should behave at various screen widths (e.g., mobile, tablet, desktop)
-- Containers are used to center and constrain the layout width
-- Grids and Columns allow us to create flexible and responsive layouts by dividing the page into rows and columns
-
-- Goto: https://codepen.io/codevilla/pen/OPJbdzQ
-- READ https://getbootstrap.com/docs/5.3/layout/breakpoints/
-
-<!-- 
-- show common breakpoints (sm, md, lg...)
-- show how to use breakpoint-specific classes to control layout
-- show actual css file to see where .col-sm-* comes from
 -->
 
 ---
 layout: image-right
 transition: slide-left
-image: /assets/valhead.png
-backgroundSize: 500px 130px
+image: /assets/stripe.gif
+backgroundSize: 500px 450px
+class: text-left
+---
+
+# Summary from Last Class
+(5 min) 
+
+- What pseudo-class is used to make this?
+- Goto https://codepen.io/codevilla/pen/zxYKWjp 
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+<!--
+-->
+
+
+---
+transition: slide-left
+---
+
+# Exercise: Layouts | box model and position
+(30 min) Goto: https://codepen.io/codevilla/pen/MYWjYVz
+|                                                     |                             |
+| --------------------------------------------------- | --------------------------- |
+| `display: block` | vertical layout, margins may collapse between other block elements |
+| `display: inline` | horizontal layout |
+| `display: inline-block` | hybrid of block and inline |
+| `position` | manipulate the location of an element |
+| `float` | designed to be used for positioning images |
+| `display: flex` | CSS Flexbox Layout  |
+| `display: grid` | CSS Grid Layout |
+
+<!-- 
+- READ: https://css-tricks.com/almanac/properties/p/position/
+-->
+
+---
+transition: slide-left
+---
+
+# Exercise: Floats
+(15 min) Originally designed for wrappping text around images
+
+- Goto: https://codepen.io/codevilla/pen/wBvzxWV 
+
+<!-- 
+- READ: https://developer.mozilla.org/en-US/docs/Web/CSS/float
+-->
+
+---
+layout: image-right
+transition: slide-left
+image: /assets/sarahdrasner.png
+backgroundSize: 500px 450px
 class: text-left
 ---
 
@@ -163,11 +140,17 @@ class: text-left
 <br/>
 
 🍦 Cool Tips, Trends and Resources:
-- 🔥 [Learn Bootstrap by Freecodecamp](https://www.youtube.com/watch?v=-qfEOE4vtxE)
-- ❓ Enter your anonymous lab questions [here](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
-- 🎠 (CSS animations](https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/)
-- 🎨 [Animated Gradients](https://codepen.io/cassie-codes/pen/YzZwyGa/9e06c3f5507b498214bf46dc2f56bd79)
-- 🆎 [5 Keys to Accessible Web Typography](https://betterwebtype.com/5-keys-to-accessible-web-typography/)
+- ⊞ [CSS Grid Course](https://www.youtube.com/watch?v=T-slCsOrLcc&list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG)
+- ⊿ [Trianglify.io](https://trianglify.io/)
+- 📏 [Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
+- ⏳ [CSS Filters](https://css-tricks.com/almanac/properties/f/filter/)
+- ⚙️ [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
+- 🫥 [The Great Divide](https://css-tricks.com/the-great-divide/)
+- 🥤 [Making CSS Animations Feel Natural](https://css-tricks.com/making-css-animations-feel-natural/)
+- 🦑 [Responsive Designs](https://css-tricks.com/beyond-media-queries-using-newer-html-css-features-for-responsive-designs/)
+- ◘ [Centering a Div](https://www.joshwcomeau.com/css/center-a-div/)
+- 🎚️ [CSS Gradient Generator](https://cssgradient.io)
+
 <!-- 
 - remember: take attendance
 -->
@@ -177,12 +160,43 @@ class: text-left
 transition: slide-left
 ---
 
-# Exercise: Emulate stripe.com's hero page
-(remainder of time)
+# Exercise: Flexbox
+(20 min) Recognize how flexbox can be applied in website development
 
-- Goto: https://codepen.io/codevilla/pen/GgRNevw
+- Goto: https://codepen.io/codevilla/pen/pvoEZLN 
+- experiment with https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 <!-- 
+READ: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+-->
+
+---
+transition: slide-left
+---
+
+# Exercise: Grid
+(20 min) Recreate the following using CSS Grid
+
+- Goto: https://codepen.io/codevilla/pen/dPypjEr 
+- experiment with https://css-tricks.com/snippets/css/complete-guide-grid/
+<img src="/assets/golden.jpg" alt="" style="height: 400px">
+
+<!-- 
+- How do you inspect an element with :hover?
+-->
+
+---
+transition: slide-left
+---
+
+# Exercise: Layout
+(remainder of time) 
+- Goto: https://codepen.io/codevilla/pen/WbNGarg
+- Recreate [this section](https://sharon-yi.com/) following using any combination of layout techniques we covered
+<img src="/assets/portfoliosample.png" alt="" style="height: 400px">
+
+<!-- 
+- How do you inspect an element with :hover?
 -->
 
 ---
@@ -191,9 +205,10 @@ transition: slide-left
 
 ## For homework:
 
-- "Personal Website" assignment (aka Portfolio assignment) due Sun. Mar. 9 midnight EST
+- Apply what you've learned so far to your "Personal Website" assignment (aka Portfolio assignment)
+   - Validate HTML https://validator.w3.org/
+   - Validate CSS https://jigsaw.w3.org/css-validator/
 - Reminder: try to complete class feedback survey every other week
-- Enter your anonymous lab questions [here](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
 
 <!--
 - take attendance
